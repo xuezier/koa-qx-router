@@ -1,0 +1,25 @@
+{
+  "name": "koa-qx-router",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xuezi",
+  "license": "ISC",
+  "dependencies": {
+    "co-request": "^1.0.0",
+    "form-urlencoded": "^1.4.1",
+    "koa-basic-auth": "^1.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuezier/koa-qx-router.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xuezier/koa-qx-router/issues"
+  },
+  "homepage": "https://github.com/xuezier/koa-qx-router#readme",
+  "description": ""
+}
