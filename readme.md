@@ -1,5 +1,5 @@
 # koa-qx-router
-配合koa@v2使用的路由注册系统,Can not use now
+配合koa@v2使用的路由注册系统,Now , you can use the service !!!! please see the readme.md
 
                          _oo0oo_
                         088888880
@@ -28,6 +28,14 @@
 npm install koa-qx-router
 
 ## Usage
+### On Main Server
+````javascript
+const qx = require("koa-qx-router");
+const qxServer = =new qx.server();
+
+qxServer.listen(port, hostname, cb);
+````
+### On Client Server
 ````javascript
 const koa = require("koa");
 const app = new koa();
@@ -53,11 +61,11 @@ app.use(router.allowedMethods());
 app.listen(clientPort, qxClient.registerServer(app));
 ````
 
-## Origin Cros
+#### Origin Cros
 ````javascript
 app.use(qxClient.cros(options));
 ````
-### Options
+##### Options
 Configures the Access-Control-Allow-Origin CORS header.
 Options is a json.
 
@@ -66,7 +74,7 @@ Options is a json.
     allowMethods    String, default 'GET,HEAD,PUT,POST,DELETE', set `Access-Control-Allow-Methods`
 
 
-## auth
+#### Auth
 ````javascript
 app.use(qxClient.auth({
     name: name,
@@ -74,3 +82,12 @@ app.use(qxClient.auth({
 }));
 ````
 if dont set name and pass, qxClient will auto generate a name and pass.
+
+## Support
+use the module must start least 2 service processes. 1 for Main service, others for client service processes.
+
+Main service process is open to the outside world.
+
+Client service processes is closed, not open to the outside world. 
+
+Users only through the main service process to access client service processes.
