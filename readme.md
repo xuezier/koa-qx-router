@@ -61,9 +61,9 @@ app.use(router.allowedMethods());
 app.listen(clientPort, qxClient.registerServer(app));
 ````
 
-#### Origin Cros
+#### Origin Cors
 ````javascript
-app.use(qxClient.cros(options));
+app.use(qxClient.cors(options));
 ````
 ##### Options
 Configures the Access-Control-Allow-Origin CORS header.
