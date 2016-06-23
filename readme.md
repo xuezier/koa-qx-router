@@ -1,5 +1,5 @@
 # koa-qx-router
-配合koa@v2使用的路由注册系统
+配合koa@v2使用的路由注册系统,Can not use now
 
                          _oo0oo_
                         088888880
