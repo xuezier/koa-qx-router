@@ -1,6 +1,6 @@
 {
   "name": "koa-qx-router",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,8 +8,9 @@
   "author": "xuezi",
   "license": "ISC",
   "dependencies": {
-    "koa-basic-auth": "^1.1.2",
-    "basic-auth": "^1.0.4"
+    "basic-auth": "^1.0.4",
+    "formidable": "^1.0.17",
+    "koa-basic-auth": "^1.1.2"
   },
   "devDependencies": {},
   "repository": {

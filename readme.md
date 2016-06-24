@@ -83,6 +83,22 @@ app.use(qxClient.auth({
 ````
 if dont set name and pass, qxClient will auto generate a name and pass.
 
+
+#### BodyParser
+````javascript
+app.use(qxClient.bodyParser(options))
+````
+#####Options
+Parse the request body. optins is a json
+    
+    encoding    String, default `utf-8`
+    multipart   Boolean, allow multipart data, default true,
+    jsonLimit   String|Integer, The byte (if integer) limit of the JSON body, default 1mb
+    formLimit   String|Integer, The byte (if integer) limit of the form body, default 56kb
+    textLimit   String|Integer, The byte (if integer) limit of the text body, default 56kb
+    patchNode   Boolean, Patch request body to Node's ctx.req, default false
+    patchKoa    Boolean, Patch request body to Koa's ctx.request, default true
+
 ## Support
 use the module must start least 2 service processes. 1 for Main service, others for client service processes.
 
