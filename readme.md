@@ -1,4 +1,5 @@
 # koa-qx-router
+[![NPM version][npm-image]][npm-url]
 配合koa@v2使用的路由注册系统,Now , you can use the service !!!! please see the readme.md
 
                          _oo0oo_
@@ -107,3 +108,8 @@ Main service process is open to the outside world.
 Client service processes is closed, not open to the outside world. 
 
 Users only through the main service process to access client service processes.
+
+
+
+[npm-image]: https://img.shields.io/npm/v/koa-qx-router.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/koa-qx-router
