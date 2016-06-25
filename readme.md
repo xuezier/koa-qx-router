@@ -1,7 +1,7 @@
 # koa-qx-router
 [![NPM version][npm-image]][npm-url]
 
-配合koa@v2使用的路由注册系统,Now , you can use the service !!!! please see the readme.md
+配合koa@v2使用的路由注册系统,Now , you can use the service !!!! please see the [readme.md](https://github.com/xuezier/koa-qx-router/blob/master/readme.md)
 
                          _oo0oo_
                         088888880
@@ -23,17 +23,21 @@
                          '=---='
 
      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-               佛祖保佑    : :    永无BUG
+           Buddha bless    : :    Never BUG
 
 
 ## Installation (via npm)
 npm install koa-qx-router
 
+or
+
+npm install koa-qx-router --save
+
 ## Usage
 ### On Main Server
 ````javascript
 const qx = require("koa-qx-router");
-const qxServer = =new qx.server();
+const qxServer = new qx.server();
 
 qxServer.listen(port, hostname, cb);
 ````
