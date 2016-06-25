@@ -23,7 +23,7 @@
                          '=---='
 
      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-           Buddha bless    : :    Never BUG
+           Buddha bless    : :    Never BUGs
 
 
 ## Installation (via npm)
@@ -95,7 +95,7 @@ if dont set name and pass, qxClient will auto generate a name and pass.
 app.use(qxClient.bodyParser(options))
 ````
 #####Options
-Parse the request body. optins is a json
+Parse the request body. options is a json
     
     encoding    String, default `utf-8`
     multipart   Boolean, allow multipart data, default true,

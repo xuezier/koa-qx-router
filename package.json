@@ -8,9 +8,7 @@
   "author": "xuezi",
   "license": "ISC",
   "dependencies": {
-    "basic-auth": "^1.0.4",
-    "formidable": "^1.0.17",
-    "koa-basic-auth": "^1.1.2"
+    "formidable": "^1.0.17"
   },
   "devDependencies": {},
   "repository": {
