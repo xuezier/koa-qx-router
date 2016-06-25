@@ -43,7 +43,7 @@ qxServer.listen(port, hostname, cb);
 ````
 
 #### Install Auth
-Install auth must be used. add an auth at least.
+Install auth must be used. add an auth at least. An auth can only be used by one person to cerate client Service to connect the main service.
 ````javascript
 qxServer.install({name1:pass1, name2:pass2 ...});
 ````
