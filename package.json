@@ -1,6 +1,6 @@
 {
   "name": "koa-qx-router",
-  "version": "0.4.8",
+  "version": "0.5.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,5 @@
     "url": "https://github.com/xuezier/koa-qx-router/issues"
   },
   "homepage": "https://github.com/xuezier/koa-qx-router#readme",
-  "description": ""
+  "description": "a node.js module for koa middleware, about auth,origin cors, body-parser and more, please se readme.md for details"
 }
