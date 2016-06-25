@@ -41,6 +41,13 @@ const qxServer = new qx.server();
 
 qxServer.listen(port, hostname, cb);
 ````
+
+#### Install Auth
+Install auth must be used. add an auth at least.
+````javascript
+qxServer.install({name1:pass1, name2:pass2 ...});
+````
+
 ### On Client Server
 ````javascript
 const koa = require("koa");
