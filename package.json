@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/xuezier/koa-qx-router/issues"
   },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "homepage": "https://github.com/xuezier/koa-qx-router#readme",
   "description": "a node.js module for koa middleware, about auth,origin cors, body-parser and more, please se readme.md for details"
 }

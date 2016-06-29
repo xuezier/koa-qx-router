@@ -39,7 +39,7 @@ npm install koa-qx-router --save
 const qx = require("koa-qx-router");
 const qxServer = new qx.server();
 
-qxServer.listen(port, hostname, cb);
+qxServer.listen(mainPort, mainHostname, cb);
 ````
 
 #### Install Auth
@@ -55,8 +55,8 @@ const app = new koa();
 
 const qx = require("koa-qx-router");
 const qxClient = new qx.client({
-    port: port,             // 主路由的端口,default 1333
-    hostname: hostname,     // 主路由的hostname,default 127.0.0.1
+    port: mainPort,             // 主路由的端口,default 1333
+    hostname: mainHostname,     // 主路由的hostname,default 127.0.0.1
     auth:{
         name: auth_name,    // 注册主路由时的auth,作为验证,需要在主路由中先配置此项
         pass: auth_pass
@@ -64,7 +64,7 @@ const qxClient = new qx.client({
 });
 
 const router = require("koa-router")();
-router.all("/", function* (){
+router.all("/getname", function* (){
     this.body = "ok";
 });
 
@@ -72,6 +72,10 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 app.listen(clientPort, qxClient.registerServer(app));
+````
+Now, defined a rest Api for http://127.0.0.1:clientPort/getname, access the api you can use curl like
+````bash
+curl http://mainHostname:mainPort/auth_name/getname
 ````
 
 #### Origin Cors
