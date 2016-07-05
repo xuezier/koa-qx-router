@@ -89,6 +89,7 @@ Options is a json.
     origin          Array, default [*], set `Access-Control-Allow-Origin`
     credentials     Boolean, default false, set `Access-Control-Allow-Credentials`
     allowMethods    String, default 'GET,HEAD,PUT,POST,DELETE', set `Access-Control-Allow-Methods`
+    strict          Boolean, false, set `Access-Control-Allow-Origin` cors model
 
 
 #### Auth
