@@ -49,10 +49,13 @@ qxServer.install({name1:pass1, name2:pass2 ...});
 ````
 
 ### On Client Server
+create a app
 ````javascript
 const koa = require("koa");
 const app = new koa();
-
+````
+create a client service object
+````javascript
 const qx = require("koa-qx-router");
 const qxClient = new qx.client({
     port: mainPort,             // 主路由的端口,default 1333
@@ -62,20 +65,6 @@ const qxClient = new qx.client({
         pass: auth_pass
     }
 });
-
-const router = require("koa-router")();
-router.all("/getname", function* (){
-    this.body = "ok";
-});
-
-app.use(router.routes());
-app.use(router.allowedMethods());
-
-app.listen(clientPort, qxClient.registerServer(app));
-````
-Now, defined a rest Api for http://127.0.0.1:clientPort/getname, access the api you can use curl like
-````bash
-curl http://mainHostname:mainPort/auth_name/getname
 ````
 
 #### Origin Cors
@@ -91,7 +80,6 @@ Options is a json.
     allowMethods    String, default 'GET,HEAD,PUT,POST,DELETE', set `Access-Control-Allow-Methods`
     strict          Boolean, false, set `Access-Control-Allow-Origin` cors model
 
-
 #### Auth
 ````javascript
 app.use(qxClient.auth({
@@ -99,8 +87,7 @@ app.use(qxClient.auth({
     pass: pass
 }));
 ````
-if dont set name and pass, qxClient will auto generate a name and pass.
-
+if didnt set name and pass, qxClient will auto generate a name and pass.
 
 #### BodyParser
 ````javascript
@@ -116,6 +103,31 @@ Parse the request body. options is a json
     textLimit   String|Integer, The byte (if integer) limit of the text body, default 56kb
     patchNode   Boolean, Patch request body to Node's ctx.req, default false
     patchKoa    Boolean, Patch request body to Koa's ctx.request, default true
+
+
+add koa-router
+````javascript
+const router = require("koa-router")();
+router.all("/getname", function* (){
+    this.body = "ok";
+});
+
+app.use(router.routes());
+app.use(router.allowedMethods());
+````
+
+start client service
+````javascript
+app.listen(clientPort, qxClient.registerServer(app));
+````
+Now, defined a rest Api for http://127.0.0.1:clientPort/getname, access the api you can use curl like
+````bash
+curl http://mainHostname:mainPort/auth_name/getname
+````
+
+
+
+
 
 ## Support
 use the module must start least 2 service processes. 1 for Main service, others for client service processes.
