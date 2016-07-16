@@ -138,7 +138,8 @@ Client service processes is closed, not open to the outside world.
 
 Users only through the main service process to access client service processes.
 
-
+## disclaimer
+此模块是开发者自主兴趣开发和维护，不参与商业性运作，开发者具有最终解释权，如有任何疑问请在github上创建issue。
 
 [npm-image]: https://img.shields.io/npm/v/koa-qx-router.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/koa-qx-router

@@ -1,6 +1,6 @@
 {
   "name": "koa-qx-router",
-  "version": "0.5.70",
+  "version": "0.5.72",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
