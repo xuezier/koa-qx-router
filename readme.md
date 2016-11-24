@@ -1,4 +1,4 @@
-# koa-qx-router
+# Express-qx-router
 [![NPM version][npm-image]][npm-url]
 
 配合Express使用的路由服务分发注册系统,Now , you can use the service !!!! please see the [readme.md](https://github.com/xuezier/koa-qx-router/blob/dev/readme.md)
@@ -137,5 +137,5 @@ Users only through the main service process to access client service processes.
 ## disclaimer
 此模块是开发者自主兴趣开发和维护，不参与商业性运作，开发者具有最终解释权，如有任何疑问请在github上创建issue。
 
-[npm-image]: https://img.shields.io/npm/v/koa-qx-router.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/koa-qx-router
+[npm-image]: https://img.shields.io/npm/v/express-qx-router.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/express-qx-router
