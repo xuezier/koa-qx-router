@@ -1,6 +1,6 @@
 {
   "name": "express-qx-router",
-  "version": "0.0.1",
+  "version": "0.6.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,6 +8,7 @@
   "author": "xuezi",
   "license": "ISC",
   "dependencies": {
+    "co": "^4.6.0",
     "formidable": "^1.0.17"
   },
   "devDependencies": {},
@@ -22,5 +23,5 @@
     "node": ">=4.0.0"
   },
   "homepage": "https://github.com/xuezier/koa-qx-router#readme",
-  "description": "a node.js module for koa middleware, about auth,origin cors, body-parser and more, please se readme.md for details"
+  "description": "a node.js module for express middleware, about auth,origin cors, body-parser and more, please se readme.md for details"
 }
